@@ -4,7 +4,7 @@ VAR
 BEGIN
  FOR i FROM 0 TO array.length-1   DO
  
-    FOR j=i  TO array[i] STEP -1  DO
+    FOR j=i  TO 0 STEP -1  DO
 
 IF ( array[j-1]> array[j]) Then
 
@@ -13,7 +13,7 @@ IF ( array[j-1]> array[j]) Then
     array[j-1 ]:= X 
 
     ELSE
-        RETURN(error);
+        RETURN(-1);
    
       END_IF
     END_FOR
